@@ -1,0 +1,32 @@
+.page-header {
+   background-image: url(../img/header-bg.jpg);
+   background-position: center;
+   font-family: 'Nunito', sans-serif;
+   color: $white;
+}
+
+.page-header__wrapper {
+   display: flex;
+   margin: 0 auto;
+   max-width: 1140px;
+   flex-direction: column;
+}
+
+.page-header__title {
+   padding: 185px 0;
+   text-align: center;
+}
+
+.page-header__heading {
+   font-size: 62px;
+   text-transform: uppercase;
+}
+
+.page-header__description {
+   margin: 0 auto;
+   padding: 10px 0;
+   max-width: 615px;
+   font-size: 17px;
+   font-weight: 300;
+   line-height: 27px;
+}
