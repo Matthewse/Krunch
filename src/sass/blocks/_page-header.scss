@@ -1,19 +1,22 @@
 .page-header {
+   background-color: #36393f;
    background-image: url(../img/header-bg.jpg);
    background-position: center;
+   background-size: cover;
    font-family: 'Nunito', sans-serif;
    color: $white;
 }
 
 .page-header__wrapper {
    display: flex;
+   padding: 0 15px;
    margin: 0 auto;
    max-width: 1140px;
    flex-direction: column;
 }
 
 .page-header__title {
-   padding: 185px 0;
+   padding: 190px 0 200px;
    text-align: center;
 }
 
@@ -24,7 +27,7 @@
 
 .page-header__description {
    margin: 0 auto;
-   padding: 10px 0;
+   padding: 10px 0 60px;
    max-width: 615px;
    font-size: 17px;
    font-weight: 300;

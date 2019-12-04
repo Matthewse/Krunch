@@ -1,0 +1,24 @@
+.button__list {
+   display: inline;
+}
+
+.button__item {
+   display: inline;
+}
+
+.button {
+   display: inline-block;
+   
+   padding: 12px 0px;
+   margin: 0 15px;
+   width: 187px;
+   color: $white;
+   text-transform: uppercase;
+   border: $light-blue 1px solid;
+   border-radius: 3px;
+   transition: 0.3s;
+
+   &:hover {
+      background-color: $light-blue;
+   }
+}
