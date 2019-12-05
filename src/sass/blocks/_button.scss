@@ -6,19 +6,22 @@
    display: inline;
 }
 
-.button {
+.button__btn {
    display: inline-block;
-   
    padding: 12px 0px;
    margin: 0 15px;
-   width: 187px;
-   color: $white;
+   text-align: center;
    text-transform: uppercase;
-   border: $light-blue 1px solid;
+   border: $blue 1px solid;
    border-radius: 3px;
+   color: $white;
    transition: 0.3s;
 
    &:hover {
-      background-color: $light-blue;
+      background-color: $blue;
    }
+}
+
+.button__btn--wide {
+   width: 187px;
 }

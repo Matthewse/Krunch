@@ -1,0 +1,33 @@
+.title {
+   margin: 115px auto 0;
+   max-width: 420px;
+   text-align: center;
+}
+
+.title__heading {
+   font-size: 28px;
+   font-weight: 700;
+   text-transform: uppercase;
+   color: $black;
+   letter-spacing: 0.08em;
+}
+
+.title__description {
+   margin: 10px 0 15px;
+   font-family: 'Open Sans', sans-serif;
+   font-size: 16px;
+   font-style: italic;
+   position: relative;
+
+   &::before {
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 40px;
+      content: "";
+      height: 2px;
+      width: 50px;
+      background-color: $light-blue;
+   }
+}
