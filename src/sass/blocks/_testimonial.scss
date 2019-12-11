@@ -1,0 +1,26 @@
+.testimonial {
+   margin: 120px auto;
+   background-image: url(../img/testimonial.jpg);
+   background-position: center;
+   background-size: cover;
+}
+
+.testimonial__content {
+   padding: 130px 0;
+   margin: 0 auto;
+   max-width: 750px;
+   text-align: center;
+   color: $white;
+}
+
+.testimonial__text {
+   margin-bottom: 30px;
+   font-size: 25px;
+   line-height: 35px;
+   font-style: italic;
+   font-weight: 100;
+}
+
+.button__btn--narrow {
+   color: inherit;
+}
