@@ -1,5 +1,5 @@
 .team__wrapper {
-   max-width: 1140px;
+   max-width: 1170px;
    margin: 0 auto;
 }
 
@@ -12,6 +12,7 @@
 
 .team__person {
    width: 260px;
+   margin: 0 15px;
 }
 
 .team__image {
@@ -26,7 +27,6 @@
       z-index: 1;
       transform: translate3d(-50%, -50%, 0);
    }
-
 }
 
 .team__social-list {
