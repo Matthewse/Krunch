@@ -1,11 +1,22 @@
+.contact__wrapper {
+   max-width: 750px;
+}
+
 .form {
    margin-bottom: 75px;
-   max-width: 750px;
 }
 
 .form__name-wrapper {
    display: flex;
    justify-content: space-between;
+
+   .form__item {
+      width: 360px;
+   }
+}
+
+.form__item {
+   margin: 0 15px;
 }
 
 .form__input-text {
@@ -29,7 +40,7 @@
 
 .form__input-text--first,
 .form__input-text--last {
-   width: 360px;
+   width: 100%;
 }
 
 .form__input-text--email,

@@ -62,7 +62,7 @@
    height: 100%;
 }
 
-.team__social-facebook {
+.team__social--facebook {
    &::before {
       background-image: url(../img/facebook.svg);
       background-size: 33px 33px;
@@ -73,7 +73,7 @@
    }
 }
 
-.team__social-twitter {
+.team__social--twitter {
    &::before {
       background-image: url(../img/twitter.svg);
       background-size: 33px 33px;
@@ -84,7 +84,7 @@
    }
 }
 
-.team__social-instagram {
+.team__social--instagram {
    &::before {
       background-image: url(../img/instagram.svg);
       background-size: 33px 33px;
