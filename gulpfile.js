@@ -47,4 +47,4 @@ gulp.task('watch', function () {
    gulp.watch('./*.html').on('change', browserSync.reload);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'style', 'watch'));
+gulp.task('build', gulp.series('clean', 'copy', 'style'));

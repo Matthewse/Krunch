@@ -2,23 +2,20 @@
    max-width: 1140px;
    padding: 0 15px;
    margin: 0 auto;
-   position: relative;
    font-family: 'Nunito', sans-serif;
    color: $grey;
 }
 
+.about__container {
+   display: flex;
+   margin: 120px 0;
+}
+
 .about__text-wrapper {
-   margin-top: 170px;
    max-width: 555px;
 }
 
-.about__text {
-   margin-bottom: 25px;
+.about__text:first-child {
+   margin: 70px 0 25px;
    line-height: 24px;
-}
-
-.about__picture {
-   position: absolute;
-   right: 0;
-   top: 160px;
 }
