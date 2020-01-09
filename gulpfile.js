@@ -15,17 +15,19 @@ gulp.task('style', function () {
       .pipe(postCSS([
          autoprefixer()
       ]))
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('src/css'))
       .pipe(browserSync.stream())
       .pipe(minify())
       .pipe(rename('style.min.css'))
-      .pipe(gulp.dest('build/css'));
+      .pipe(gulp.dest('src/css'));
 });
 
 gulp.task('copy', function () {
    return gulp.src([
+      'src/css/**',
       'src/fonts/**',
-      'src/img/**'
+      'src/img/**',
+      'src/*.html'
    ], {
       base: 'src'
    })
@@ -39,12 +41,13 @@ gulp.task('clean', function () {
 gulp.task('watch', function () {
    browserSync.init({
       server: {
-         baseDir: './'
+         baseDir: './src'
       }
    });
 
    gulp.watch('./src/sass/**/*.scss', gulp.series('style'));
-   gulp.watch('./*.html').on('change', browserSync.reload);
+   gulp.watch('./src/*.html').on('change', browserSync.reload);
 });
 
-gulp.task('build', gulp.series('clean', 'copy', 'style'));
+gulp.task('dev', gulp.series('style', 'watch'));
+gulp.task('build', gulp.series('clean', 'copy'));
