@@ -97,3 +97,17 @@
       font-style: italic;
    }
 }
+
+@media(max-width: 900px) {
+
+   .works__item {
+      width: 50%;
+   }
+}
+
+@media(max-width: 480px) {
+
+   .works__item {
+      width: 100%;
+   }
+}
