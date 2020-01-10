@@ -19,3 +19,33 @@
    margin: 70px 0 25px;
    line-height: 24px;
 }
+
+@media(max-width: 991px) {
+
+   .about__container {
+      flex-direction: column;
+      margin: auto;
+   }
+
+   .about__text-wrapper {
+      margin: auto;
+      padding-bottom: 100px;
+      order: 2;
+   }
+
+   .about__picture {
+      display: block;
+      margin-top: 50px;
+      text-align: center;
+      order: 1;
+
+      img {
+         max-width: 100%;
+         height: auto;
+      }
+   }
+
+   .about__text:first-child {
+      margin: 0 0 10px;
+   }
+}
