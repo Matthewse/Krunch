@@ -11,3 +11,10 @@
 .form__visually-hidden {
    display: none;
 }
+
+@media(max-width: $mobile-width) {
+
+   .contact__title {
+      margin-bottom: 70px;
+   }
+}

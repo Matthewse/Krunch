@@ -14,7 +14,7 @@
 .features__item {
    box-sizing: border-box;
    width: 33.3%;
-   padding: 20px 15px; 
+   padding: 20px 15px;
 
    img {
       width: 30px;
@@ -30,5 +30,25 @@
 
    p {
       line-height: 24px;
+   }
+}
+
+@media(max-width: $tablet-width) {
+
+   .features__item {
+      width: 50%;
+   }
+}
+
+@media(max-width: $mobile-width) {
+
+   .features__list {
+      padding: 15px 0 80px 0;
+   }
+
+   .features__item {
+      padding: 25px 15px;
+      width: 100%;
+      text-align: center;
    }
 }

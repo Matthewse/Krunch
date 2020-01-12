@@ -98,14 +98,18 @@
    }
 }
 
-@media(max-width: 900px) {
+@media(max-width: $tablet-width) {
 
    .works__item {
       width: 50%;
    }
 }
 
-@media(max-width: 480px) {
+@media(max-width: $mobile-width) {
+
+   .works__filter-wrapper {
+      margin: 40px auto 0;
+   }
 
    .works__item {
       width: 100%;

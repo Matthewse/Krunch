@@ -58,3 +58,15 @@
       color: $grey;
    }
 }
+
+@media(max-width: $mobile-width) {
+
+   .form__name-wrapper {
+      display: block;
+   
+      .form__item {
+         margin: 0 15px;
+         width: auto;   
+      }
+   }
+}

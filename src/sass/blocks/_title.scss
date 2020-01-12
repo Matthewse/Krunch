@@ -33,3 +33,21 @@
       background-color: $light-blue;
    }
 }
+
+
+@media(max-width: $mobile-width) {
+
+   .title__description {
+
+      &::before {
+         display: none;
+      }
+   }
+}
+
+@media(max-width: $mobile-width-small) {
+
+   .title__description {
+      padding: 0 10px;
+   }
+}

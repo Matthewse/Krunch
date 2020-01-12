@@ -20,7 +20,7 @@
    line-height: 24px;
 }
 
-@media(max-width: 991px) {
+@media(max-width: $tablet-width) {
 
    .about__container {
       flex-direction: column;
@@ -28,6 +28,7 @@
    }
 
    .about__text-wrapper {
+      max-width: 800px;
       margin: auto;
       padding-bottom: 100px;
       order: 2;
