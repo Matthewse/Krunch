@@ -6,13 +6,15 @@
 .team__list {
    margin: 100px 0;
    display: flex;
+   flex-wrap: wrap;
    justify-content: space-between;
    text-align: center;
 }
 
 .team__person {
-   width: 260px;
-   margin: 0 15px;
+   box-sizing: border-box;
+   width: 25%;
+   padding: 0 15px;
 }
 
 .team__image {
@@ -108,5 +110,39 @@
    p {
       font-size: 13px;
       color: $grey;
+   }
+}
+
+@media(max-width: $tablet-width) {
+
+   .team__wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+   }
+
+   .team__person {
+      width: 50%;
+      padding: 0 20px;
+      margin-bottom: 60px;
+   }
+}
+
+@media(max-width: $mobile-width) {
+
+   .team__list {
+      margin: 60px 0;
+   }
+
+   .team__person {
+      width: 100%;
+      padding: 0 75px;
+   }
+}
+
+@media(max-width: $mobile-width-small) {
+
+   .team__person {
+      width: 100%;
+      padding: 0 40px;
    }
 }

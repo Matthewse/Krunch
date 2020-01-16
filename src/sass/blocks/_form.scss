@@ -63,10 +63,18 @@
 
    .form__name-wrapper {
       display: block;
-   
+
       .form__item {
          margin: 0 15px;
-         width: auto;   
+         width: auto;
       }
+   }
+
+   .form__input-text {
+      margin-bottom: 15px;
+   }
+
+   .form__input-text--message {
+      margin-bottom: 50px;
    }
 }
