@@ -7,6 +7,7 @@ const minify = require('gulp-csso');
 const rename = require('gulp-rename');
 const del = require('del');
 const browserSync = require('browser-sync').create();
+const deploy = require('gulp-gh-pages');
 
 gulp.task('style', function () {
    return gulp.src('src/sass/style.scss')
@@ -48,6 +49,11 @@ gulp.task('watch', function () {
    gulp.watch('./src/sass/**/*.scss', gulp.series('style'));
    gulp.watch('./src/*.html').on('change', browserSync.reload);
 });
+
+gulp.task('deploy', function () {
+   return gulp.src("./build/**/*")
+     .pipe(deploy())
+ });
 
 gulp.task('dev', gulp.series('style', 'watch'));
 gulp.task('build', gulp.series('clean', 'copy'));
