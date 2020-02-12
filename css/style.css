@@ -114,6 +114,18 @@ a {
   line-height: 27px;
   letter-spacing: 0.01em; }
 
+@media (max-width: 480px) {
+  .page-header__title {
+    padding-top: 60px; }
+  .page-header__heading {
+    font-size: 52px; } }
+
+@media (max-width: 320px) {
+  .page-header__title {
+    padding-top: 25px; }
+  .page-header__heading {
+    font-size: 46px; } }
+
 .main-nav__wrapper {
   display: -webkit-box;
   display: flex;
@@ -141,6 +153,10 @@ a {
     .main-nav__item a:hover {
       color: #4c8cf5; }
 
+@media (max-width: 900px) {
+  .main-nav__list {
+    display: none; } }
+
 .button__list {
   display: inline; }
 
@@ -150,7 +166,7 @@ a {
 .button__btn {
   display: inline-block;
   padding: 12px 0px;
-  margin: 0 15px;
+  margin: 0 15px 15px;
   text-align: center;
   text-transform: uppercase;
   border: #4c8cf5 1px solid;
