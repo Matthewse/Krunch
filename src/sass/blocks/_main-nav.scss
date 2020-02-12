@@ -29,3 +29,10 @@
       }
    }
 }
+
+@media(max-width: $tablet-width) {
+
+   .main-nav__list {
+      display: none;
+   }
+}
